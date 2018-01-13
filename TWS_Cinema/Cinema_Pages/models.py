@@ -8,7 +8,7 @@ class Movie(models.Model):
     title = models.CharField(max_length=255)
     original_title = models.CharField(max_length=255)
     year = models.DateTimeField()
-    genre = models.CharField(max_length=255)
+    genres = models.CharField(max_length=255)
     region = models.CharField(max_length=50)
     rating = models.DecimalField(max_digits=2, decimal_places=1)
     director = models.CharField(max_length=100)
