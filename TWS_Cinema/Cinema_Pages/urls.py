@@ -8,8 +8,12 @@ urlpatterns = [
     re_path(r'^$', views.index, name='index'),
 
     # API
-    re_path(r'^movie/(?P<id>[0-9]{6,})/', views.searchbyid),
-    re_path(r'^movie/(?P<title>[\w]+)/', views.searchbytitle),
-    re_path(r'^movie/(?P<original_title>[\w\s]+)/', views.searchbyoriginal_title),
+    re_path(r'^movie/id/(?P<id>[0-9]{6,})/', views.searchbyid),
+    re_path(r'^movie/title/(?P<title>[\w]+)/', views.searchbytitle),
+    re_path(r'^movie/original_title/(?P<original_title>[\w\s]+)/', views.searchbyoriginal_title),
+    re_path(r'^movie/genre/(?P<genre>[\w]+)/', views.searchbygenre),
+
+    # new API for reference
+    # re_path(r'^movie/', views.searchbyid),
 
 ]
