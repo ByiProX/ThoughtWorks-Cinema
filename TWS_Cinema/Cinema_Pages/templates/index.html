@@ -96,122 +96,106 @@
 				</p>
 			</div>
 			<div class="col-sm-9">
-				<div class="row">
-          <div class="col-sm-3">
-    				<a href="#" data-lightbox="img/placeholder-image.png" data-gallery-id="gallery-1"><img src="img/lazyload-ph.png" data-src="img/placeholder-image.png" class="img-responsive lazyload" /></a>
-    				<h3 class="mg-md">
-    					Title goes here
-    				</h3>
-    				<p>
-    					Lorem ipsum dolor sit amet, adipiscing elit Aenean commodo ligula eget.
-    				</p>
-    			</div>
+                <div class="row">
+                    {% for movie in movies %}
+                    <div class="col-sm-3">
+                        <a href="#" data-lightbox="img/placeholder-image.png" data-gallery-id="gallery-1"><img src="{{movie.image}}" data-src="img/placeholder-image.png" class="img-responsive lazyload" /></a>
+                        <h3 class="mg-md">
+                            {{movie.title}}
+                        </h3>
+                        <p>
+                            {{movie.intro}}
+                        </p>
+    			    </div>
+                    {% endfor %}
 
-    			<div class="col-sm-3">
-    				<a href="#" data-lightbox="img/placeholder-image.png" data-gallery-id="gallery-1"><img src="img/lazyload-ph.png" data-src="img/placeholder-image.png" class="img-responsive lazyload" /></a>
-    				<h3 class="mg-md">
-    					Title goes here
-    				</h3>
-    				<p>
-    					Lorem ipsum dolor sit amet, adipiscing elit Aenean commodo ligula eget.
-    				</p>
-    			</div>
 
-          <div class="col-sm-3">
-    				<a href="#" data-lightbox="img/placeholder-image.png" data-gallery-id="gallery-1"><img src="img/lazyload-ph.png" data-src="img/placeholder-image.png" class="img-responsive lazyload" /></a>
-    				<h3 class="mg-md">
-    					Title goes here
-    				</h3>
-    				<p>
-    					Lorem ipsum dolor sit amet, adipiscing elit Aenean commodo ligula eget.
-    				</p>
-    			</div>
-    			<div class="col-sm-3">
-    				<a href="#" data-lightbox="img/placeholder-image.png" data-gallery-id="gallery-1"><img src="img/lazyload-ph.png" data-src="img/placeholder-image.png" class="img-responsive lazyload" /></a>
-    				<h3 class="mg-md">
-    					Title goes here
-    				</h3>
-    				<p>
-    					Lorem ipsum dolor sit amet, adipiscing elit Aenean commodo ligula eget.
-    				</p>
-    			</div>
-        </div>
-        <div class="row">
-          <div class="col-sm-3">
-    				<a href="#" data-lightbox="img/placeholder-image.png" data-gallery-id="gallery-1"><img src="img/lazyload-ph.png" data-src="img/placeholder-image.png" class="img-responsive lazyload" /></a>
-    				<h3 class="mg-md">
-    					Title goes here
-    				</h3>
-    				<p>
-    					Lorem ipsum dolor sit amet, adipiscing elit Aenean commodo ligula eget.
-    				</p>
-    			</div>
-    			<div class="col-sm-3">
-    				<a href="#" data-lightbox="img/placeholder-image.png" data-gallery-id="gallery-1"><img src="img/lazyload-ph.png" data-src="img/placeholder-image.png" class="img-responsive lazyload" /></a>
-    				<h3 class="mg-md">
-    					Title goes here
-    				</h3>
-    				<p>
-    					Lorem ipsum dolor sit amet, adipiscing elit Aenean commodo ligula eget.
-    				</p>
-    			</div>
-          <div class="col-sm-3">
-    				<a href="#" data-lightbox="img/placeholder-image.png" data-gallery-id="gallery-1"><img src="img/lazyload-ph.png" data-src="img/placeholder-image.png" class="img-responsive lazyload" /></a>
-    				<h3 class="mg-md">
-    					Title goes here
-    				</h3>
-    				<p>
-    					Lorem ipsum dolor sit amet, adipiscing elit Aenean commodo ligula eget.
-    				</p>
-    			</div>
-    			<div class="col-sm-3">
-    				<a href="#" data-lightbox="img/placeholder-image.png" data-gallery-id="gallery-1"><img src="img/lazyload-ph.png" data-src="img/placeholder-image.png" class="img-responsive lazyload" /></a>
-    				<h3 class="mg-md">
-    					Title goes here
-    				</h3>
-    				<p>
-    					Lorem ipsum dolor sit amet, adipiscing elit Aenean commodo ligula eget.
-    				</p>
-    			</div>
-        </div>
-        <div class="row">
-          <div class="col-sm-3">
-    				<a href="#" data-lightbox="img/placeholder-image.png" data-gallery-id="gallery-1"><img src="img/lazyload-ph.png" data-src="img/placeholder-image.png" class="img-responsive lazyload" /></a>
-    				<h3 class="mg-md">
-    					Title goes here
-    				</h3>
-    				<p>
-    					Lorem ipsum dolor sit amet, adipiscing elit Aenean commodo ligula eget.
-    				</p>
-    			</div>
-    			<div class="col-sm-3">
-    				<a href="#" data-lightbox="img/placeholder-image.png" data-gallery-id="gallery-1"><img src="img/lazyload-ph.png" data-src="img/placeholder-image.png" class="img-responsive lazyload" /></a>
-    				<h3 class="mg-md">
-    					Title goes here
-    				</h3>
-    				<p>
-    					Lorem ipsum dolor sit amet, adipiscing elit Aenean commodo ligula eget.
-    				</p>
-    			</div>
-          <div class="col-sm-3">
-    				<a href="#" data-lightbox="img/placeholder-image.png" data-gallery-id="gallery-1"><img src="img/lazyload-ph.png" data-src="img/placeholder-image.png" class="img-responsive lazyload" /></a>
-    				<h3 class="mg-md">
-    					Title goes here
-    				</h3>
-    				<p>
-    					Lorem ipsum dolor sit amet, adipiscing elit Aenean commodo ligula eget.
-    				</p>
-    			</div>
-    			<div class="col-sm-3">
-    				<a href="#" data-lightbox="img/placeholder-image.png" data-gallery-id="gallery-1"><img src="img/lazyload-ph.png" data-src="img/placeholder-image.png" class="img-responsive lazyload" /></a>
-    				<h3 class="mg-md">
-    					Title goes here
-    				</h3>
-    				<p>
-    					Lorem ipsum dolor sit amet, adipiscing elit Aenean commodo ligula eget.
-    				</p>
-    			</div>
-        </div>
+
+
+
+
+
+
+
+
+
+
+
+                    <!--<div class="col-sm-3">-->
+                        <!--<a href="#" data-lightbox="img/placeholder-image.png" data-gallery-id="gallery-1"><img src="img/lazyload-ph.png" data-src="img/placeholder-image.png" class="img-responsive lazyload" /></a>-->
+                        <!--<h3 class="mg-md">-->
+                            <!--Title goes here-->
+                        <!--</h3>-->
+                        <!--<p>-->
+                            <!--Lorem ipsum dolor sit amet, adipiscing elit Aenean commodo ligula eget.-->
+                        <!--</p>-->
+    			    <!--</div>-->
+                    <!--<div class="col-sm-3">-->
+                        <!--<a href="#" data-lightbox="img/placeholder-image.png" data-gallery-id="gallery-1"><img src="img/lazyload-ph.png" data-src="img/placeholder-image.png" class="img-responsive lazyload" /></a>-->
+                        <!--<h3 class="mg-md">-->
+                            <!--Title goes here-->
+                        <!--</h3>-->
+                        <!--<p>-->
+                            <!--Lorem ipsum dolor sit amet, adipiscing elit Aenean commodo ligula eget.-->
+                        <!--</p>-->
+                    <!--</div>-->
+                    <!--<div class="col-sm-3">-->
+                        <!--<a href="#" data-lightbox="img/placeholder-image.png" data-gallery-id="gallery-1"><img src="img/lazyload-ph.png" data-src="img/placeholder-image.png" class="img-responsive lazyload" /></a>-->
+                        <!--<h3 class="mg-md">-->
+                            <!--Title goes here-->
+                        <!--</h3>-->
+                        <!--<p>-->
+                            <!--Lorem ipsum dolor sit amet, adipiscing elit Aenean commodo ligula eget.-->
+                        <!--</p>-->
+                    <!--</div>-->
+                    <!--<div class="col-sm-3">-->
+                        <!--<a href="#" data-lightbox="img/placeholder-image.png" data-gallery-id="gallery-1"><img src="img/lazyload-ph.png" data-src="img/placeholder-image.png" class="img-responsive lazyload" /></a>-->
+                        <!--<h3 class="mg-md">-->
+                            <!--Title goes here-->
+                        <!--</h3>-->
+                        <!--<p>-->
+                            <!--Lorem ipsum dolor sit amet, adipiscing elit Aenean commodo ligula eget.-->
+                        <!--</p>-->
+                    <!--</div>-->
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <a href="#" data-lightbox="img/placeholder-image.png" data-gallery-id="gallery-1"><img src="img/lazyload-ph.png" data-src="img/placeholder-image.png" class="img-responsive lazyload" /></a>
+                        <h3 class="mg-md">
+                            Title goes here
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, adipiscing elit Aenean commodo ligula eget.
+                        </p>
+    			    </div>
+                    <div class="col-sm-3">
+                        <a href="#" data-lightbox="img/placeholder-image.png" data-gallery-id="gallery-1"><img src="img/lazyload-ph.png" data-src="img/placeholder-image.png" class="img-responsive lazyload" /></a>
+                        <h3 class="mg-md">
+                            Title goes here
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, adipiscing elit Aenean commodo ligula eget.
+                        </p>
+                    </div>
+                    <div class="col-sm-3">
+                        <a href="#" data-lightbox="img/placeholder-image.png" data-gallery-id="gallery-1"><img src="img/lazyload-ph.png" data-src="img/placeholder-image.png" class="img-responsive lazyload" /></a>
+                        <h3 class="mg-md">
+                            Title goes here
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, adipiscing elit Aenean commodo ligula eget.
+                        </p>
+    			    </div>
+    			    <div class="col-sm-3">
+                        <a href="#" data-lightbox="img/placeholder-image.png" data-gallery-id="gallery-1"><img src="img/lazyload-ph.png" data-src="img/placeholder-image.png" class="img-responsive lazyload" /></a>
+                        <h3 class="mg-md">
+                            Title goes here
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, adipiscing elit Aenean commodo ligula eget.
+                        </p>
+    			    </div>
+                </div>
 			</div>
 		</div>
 	</div>

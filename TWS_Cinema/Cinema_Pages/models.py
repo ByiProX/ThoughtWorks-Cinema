@@ -17,4 +17,5 @@ class Movie(models.Model):
     casts = models.CharField(max_length=100, null=True, blank=True)
     intro = models.TextField(null=True, blank=True)
 
-
+    # def __str__(self):
+    #     return self.intro[:20] + '...'

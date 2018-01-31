@@ -3,12 +3,17 @@ from .models import Movie
 from django.forms.models import model_to_dict
 from django.http import JsonResponse
 from django.http import Http404
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 # Create your views here.
 
 
 def index(request):
-    return render(request, 'index.html', locals())
+    movies_list = Movie.objects.order_by('-year')  # 降序
+    paginator = Paginator(movies_list, 12)
+    page = request.GET.get('page')
+    movies = paginator.get_page(page)
+    return render(request, 'index.html', {'movies': movies})
 
 
 
