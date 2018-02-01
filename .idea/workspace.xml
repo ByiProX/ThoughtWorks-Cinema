@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f86ae733-9df2-455b-81d8-03d1d90d3b54" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/models.py" afterPath="$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/static/style.css" afterPath="$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/static/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/templates/index.html" afterPath="$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/templates/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/urls.py" afterPath="$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/views.py" afterPath="$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/templates/movie_detail.html" afterPath="$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/templates/movie_detail.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,7 +27,7 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
+            <state relative-caret-position="361">
               <caret line="19" column="25" lean-forward="false" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
@@ -43,8 +39,8 @@
       <file leaf-file-name="movie_detail.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/templates/movie_detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="98" column="24" lean-forward="false" selection-start-line="98" selection-start-column="24" selection-end-line="98" selection-end-column="24" />
+            <state relative-caret-position="245">
+              <caret line="38" column="59" lean-forward="false" selection-start-line="38" selection-start-column="59" selection-end-line="38" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -63,12 +59,11 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="159" column="48" lean-forward="true" selection-start-line="159" selection-start-column="48" selection-end-line="159" selection-end-column="48" />
+            <state relative-caret-position="-636">
+              <caret line="99" column="69" lean-forward="false" selection-start-line="99" selection-start-column="69" selection-end-line="99" selection-end-column="69" />
               <folding>
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="e#8720#8727#0" expanded="true" />
-                <element signature="e#9263#9270#0" expanded="true" />
+                <element signature="e#8719#8726#0" expanded="true" />
+                <element signature="e#9262#9269#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -96,9 +91,9 @@
         <option value="$PROJECT_DIR$/TWS_Cinema/TWS_Cinema/settings.py" />
         <option value="$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/models.py" />
         <option value="$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/static/style.css" />
-        <option value="$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/templates/index.html" />
         <option value="$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/urls.py" />
         <option value="$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/views.py" />
+        <option value="$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/templates/index.html" />
         <option value="$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/templates/movie_detail.html" />
       </list>
     </option>
@@ -511,16 +506,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="19" column="25" lean-forward="false" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
@@ -537,22 +522,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="25" lean-forward="false" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="159" column="48" lean-forward="true" selection-start-line="159" selection-start-column="48" selection-end-line="159" selection-end-column="48" />
+        <state relative-caret-position="-636">
+          <caret line="99" column="69" lean-forward="false" selection-start-line="99" selection-start-column="69" selection-end-line="99" selection-end-column="69" />
           <folding>
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#8720#8727#0" expanded="true" />
-            <element signature="e#9263#9270#0" expanded="true" />
+            <element signature="e#8719#8726#0" expanded="true" />
+            <element signature="e#9262#9269#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/templates/movie_detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="98" column="24" lean-forward="false" selection-start-line="98" selection-start-column="24" selection-end-line="98" selection-end-column="24" />
+        <state relative-caret-position="245">
+          <caret line="38" column="59" lean-forward="false" selection-start-line="38" selection-start-column="59" selection-end-line="38" selection-end-column="59" />
           <folding />
         </state>
       </provider>
