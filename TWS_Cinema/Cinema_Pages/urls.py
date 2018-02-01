@@ -5,7 +5,8 @@ from . import views
 
 urlpatterns = [
     # Home page.
-    re_path(r'^$', views.index, name='index'),
+    re_path(r'^$|^index.html$', views.index, name='index'),
+    re_path(r'^movie/(?P<id>[0-9]{6,})/', views.movie_detail, name='index'),
 
     # API
     re_path(r'^movie/id/(?P<id>[0-9]{6,})/', views.searchbyid),

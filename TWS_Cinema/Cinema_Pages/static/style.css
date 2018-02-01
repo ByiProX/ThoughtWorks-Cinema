@@ -31,18 +31,37 @@ a:hover{text-decoration: none; cursor:pointer;}
 	position:relative;
 }
 .bloc .container{
-	padding-left:0;
-	padding-right:0;
+	padding-left:50;
+	padding-right:50;
 }
 
 
 /* Sizes */
+.page-num-location{
+    margin-top: -10px;
+}
+
+.movie-rating{
+    margin-top: -10px;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-left: auto;
+    padding-bottom: 10px;
+}
+
+.movie-img{
+    display: block;
+    max-width: 100%;
+    height: 141px;
+    width: auto;
+    margin: auto;
+}
 
 .bloc-lg{
-	padding:100px 50px;
+	padding:10px 50px;
 }
 .bloc-sm{
-	padding:20px 50px;
+	padding:5px 50px;
 }
 
 /* = Full Screen Blocs 
@@ -314,14 +333,14 @@ nav .caret{
 	top:0;
 	z-index:1000;
 	box-shadow:0 1px 2px rgba(0,0,0,.3);
-	 transition: all .2s ease-out;
+	transition: all .2s ease-out;
 }
 .fill-bloc-top-edge.sticky{
 	background-color:rgb(0, 0, 0);
 	width:100%;
 	max-width: 100%;
 	margin-top: 0;
-	padding: 20px;
+	padding: 0px;
 }
 .fill-bloc-top-edge.sticky .navbar{
 	max-width: 1170px;

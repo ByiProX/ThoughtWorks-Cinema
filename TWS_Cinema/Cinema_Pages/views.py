@@ -10,10 +10,17 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 def index(request):
     movies_list = Movie.objects.order_by('-year')  # 降序
-    paginator = Paginator(movies_list, 12)
+    paginator = Paginator(movies_list, 16)
     page = request.GET.get('page')
     movies = paginator.get_page(page)
     return render(request, 'index.html', {'movies': movies})
+
+
+def movie_detail(request, id):
+    movie = Movie.objects.get(id=id)
+    context = {'movie': movie}
+    return render(request, 'movie_detail.html', context)
+
 
 
 
