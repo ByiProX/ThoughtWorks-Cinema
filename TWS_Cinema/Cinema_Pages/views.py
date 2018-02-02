@@ -4,6 +4,7 @@ from django.forms.models import model_to_dict
 from django.http import JsonResponse
 from django.http import Http404
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+from .func import fuzzy_finder
 
 # Create your views here.
 
@@ -54,14 +55,25 @@ def movie_search_by_year(request, year):
     return render(request, 'index.html', context)
 
 
+# def movie_search_form(request):
+#     非模糊查询
+#     title = request.POST.get('q')
+#     movies_list = Movie.objects.filter(title=title)
+#     paginator = Paginator(movies_list, 4)
+#     page = request.GET.get('page')
+#     movies = paginator.get_page(page)
+#     return render(request, 'index.html', {'movies': movies})
+
+
 def movie_search_form(request):
-    title = request.POST.get('q')
-    movies_list = Movie.objects.filter(title=title)
-    paginator = Paginator(movies_list, 4)
+    # 模糊查询
+    q = request.POST.get('q')
+    collection = Movie.objects.all()
+    movies_list = fuzzy_finder(q, collection)
+    paginator = Paginator(movies_list, 8)
     page = request.GET.get('page')
     movies = paginator.get_page(page)
     return render(request, 'index.html', {'movies': movies})
-
 
 
 
