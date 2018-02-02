@@ -4,7 +4,6 @@ from django.forms.models import model_to_dict
 from django.http import JsonResponse
 from django.http import Http404
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
-from django.http import HttpResponse
 
 # Create your views here.
 
@@ -38,6 +37,7 @@ def movie_search_by_genre(request, genre):
 
 
 def movie_search_by_year(request, year):
+    # 使用Movie.objects.filter(year = year)更佳
     datas = Movie.objects.all()
     movies_list = []
     for data in datas:
@@ -52,6 +52,19 @@ def movie_search_by_year(request, year):
     movies = paginator.get_page(page)
     context = {'movies': movies}
     return render(request, 'index.html', context)
+
+
+def movie_search_form(request):
+    title = request.POST.get('q')
+    movies_list = Movie.objects.filter(title=title)
+    paginator = Paginator(movies_list, 4)
+    page = request.GET.get('page')
+    movies = paginator.get_page(page)
+    return render(request, 'index.html', {'movies': movies})
+
+
+
+
 
 # API
 
