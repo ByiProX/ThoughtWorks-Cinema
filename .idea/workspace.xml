@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f86ae733-9df2-455b-81d8-03d1d90d3b54" name="Default" comment="">
+<<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/static/favicon.png" afterPath="$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/static/favicon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/models.py" afterPath="$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/tests.py" afterPath="$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/tests.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TWS_Cinema/TWS_Cinema/settings.py" afterPath="$PROJECT_DIR$/TWS_Cinema/TWS_Cinema/settings.py" />
+>>>>>>> templates
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,11 +24,17 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/models.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="380">
               <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding>
                 <marker date="1517671426649" expanded="true" signature="85:847" ph="..." />
               </folding>
+=======
+            <state relative-caret-position="437">
+              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding />
+>>>>>>> templates
             </state>
           </provider>
         </entry>
@@ -28,13 +42,31 @@
       <file leaf-file-name="tests.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/tests.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="57">
               <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+=======
+            <state relative-caret-position="274">
+              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding>
+                <element signature="e#17#57#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TWS_Cinema/TWS_Cinema/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="383">
+              <caret line="28" column="57" lean-forward="false" selection-start-line="28" selection-start-column="57" selection-end-line="28" selection-end-column="57" />
+>>>>>>> templates
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TWS_Cinema/TWS_Cinema/settings.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -60,10 +92,19 @@
                 <marker date="1517671426651" expanded="true" signature="3063:3165" ph="..." />
                 <marker date="1517671426651" expanded="true" signature="3292:3392" ph="..." />
               </folding>
+=======
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding />
+>>>>>>> templates
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/urls.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -82,6 +123,16 @@
               <folding>
                 <marker date="1517671426649" expanded="true" signature="131:137" ph="..." />
                 <marker date="1517671426649" expanded="true" signature="131:145" ph="..." />
+=======
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="38" column="104" lean-forward="true" selection-start-line="38" selection-start-column="104" selection-end-line="38" selection-end-column="104" />
+              <folding>
+                <element signature="e#9793#9800#0" expanded="true" />
+                <element signature="e#10336#10343#0" expanded="true" />
+>>>>>>> templates
               </folding>
             </state>
           </provider>
@@ -90,8 +141,13 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/views.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="-755">
               <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+=======
+            <state relative-caret-position="43">
+              <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+>>>>>>> templates
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -101,6 +157,12 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>laz</find>
+      <find>bloc-lg</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -108,13 +170,21 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/TWS_Cinema/TWS_Cinema/urls.py" />
-        <option value="$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/templates/index.html" />
         <option value="$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/apps.py" />
         <option value="$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/admin.py" />
-        <option value="$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/models.py" />
-        <option value="$PROJECT_DIR$/TWS_Cinema/TWS_Cinema/settings.py" />
+        <option value="$PROJECT_DIR$/ToDo" />
+        <option value="$PROJECT_DIR$/ToDoLists.md" />
+        <option value="$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/static/style.css" />
+        <option value="$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/forms.py" />
+        <option value="$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/templates/movie_detail.html" />
         <option value="$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/urls.py" />
         <option value="$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/views.py" />
+        <option value="$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/func.py" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/templates/index.html" />
+        <option value="$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/models.py" />
+        <option value="$PROJECT_DIR$/TWS_Cinema/TWS_Cinema/settings.py" />
+        <option value="$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/tests.py" />
       </list>
     </option>
   </component>
@@ -202,6 +272,11 @@
     <property name="settings.editor.selected.configurable" value="Errors" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/templates" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -213,6 +288,30 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager" selected="Python.forms">
+    <configuration name="forms" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TWS_Cinema/Cinema_Pages" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ThoughtWorksCinema" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/forms.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Python.forms" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -232,17 +331,20 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32880846" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+=======
+>>>>>>> templates
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18739903" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -278,50 +380,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/templates/favicon.png" />
-    <entry file="file://$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/migrations/0001_initial.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/django/core/management/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3695">
-          <caret line="367" column="4" lean-forward="false" selection-start-line="367" selection-start-column="4" selection-end-line="367" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="152">
-            <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/migrations/0002_auto_20180110_1736.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TWS_Cinema/lenrning_logs/tests.py" />
-    <entry file="file://$PROJECT_DIR$/TWS_Cinema/lenrning_logs/views.py" />
-    <entry file="file://$PROJECT_DIR$/TWS_Cinema/lenrning_logs/admin.py" />
-    <entry file="file://$PROJECT_DIR$/TWS_Cinema/lenrning_logs/migrations/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/TWS_Cinema/lenrning_logs/models.py" />
-    <entry file="file://$PROJECT_DIR$/TWS_Cinema/lenrning_logs/apps.py" />
-    <entry file="file://$PROJECT_DIR$/TWS_Cinema/learning_logs/tests.py" />
-    <entry file="file://$PROJECT_DIR$/TWS_Cinema/learning_logs/apps.py" />
-    <entry file="file://$PROJECT_DIR$/TWS_Cinema/learning_logs/admin.py" />
     <entry file="file://$PROJECT_DIR$/TWS_Cinema/learning_logs/__init__.py" />
     <entry file="file://$PROJECT_DIR$/TWS_Cinema/learning_logs/templates/index.html" />
     <entry file="file://$PROJECT_DIR$/TWS_Cinema/TWS_Cinema/wsgi.py">
@@ -341,10 +399,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+<<<<<<< HEAD
           <folding>
             <marker date="1517671426649" expanded="true" signature="131:137" ph="..." />
             <marker date="1517671426649" expanded="true" signature="131:145" ph="..." />
           </folding>
+=======
+>>>>>>> templates
         </state>
       </provider>
     </entry>
@@ -353,9 +414,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#53#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -384,6 +442,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
           <caret line="20" column="36" lean-forward="false" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+<<<<<<< HEAD
+=======
+          <folding>
+            <element signature="e#634#666#0" expanded="false" />
+          </folding>
+>>>>>>> templates
         </state>
       </provider>
     </entry>
@@ -422,6 +486,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TWS_Cinema/learning_logs/migrations/__init__.py" />
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
@@ -430,6 +495,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> templates
     <entry file="file://$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -444,7 +511,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+<<<<<<< HEAD
           <folding />
+=======
+          <folding>
+            <element signature="e#45#82#0" expanded="false" />
+          </folding>
+>>>>>>> templates
         </state>
       </provider>
     </entry>
@@ -459,6 +532,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/templates/favicon.png" />
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/TWS_Cinema/TWS_Cinema/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -477,6 +551,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> templates
     <entry file="file://$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/migrations/0001_initial.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -502,20 +578,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TWS_Cinema/TWS_Cinema/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TWS_Cinema/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="9" lean-forward="false" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+<<<<<<< HEAD
+=======
         </state>
       </provider>
     </entry>
@@ -526,18 +590,153 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/models.py">
+    <entry file="file://$PROJECT_DIR$/ToDo" />
+    <entry file="file://$PROJECT_DIR$/ToDoLists.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="37" lean-forward="false" selection-start-line="0" selection-start-column="37" selection-end-line="0" selection-end-column="37" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TWS_Cinema/manage.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="e#22#31#0" expanded="false" />
+          </folding>
+>>>>>>> templates
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TWS_Cinema/TWS_Cinema/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+<<<<<<< HEAD
+=======
+          <folding>
+            <element signature="e#634#666#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/static/img/placeholder-image.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/static/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="40" column="22" lean-forward="false" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+          <folding />
+>>>>>>> templates
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/templates/movie.html">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="19">
+          <caret line="1" column="9" lean-forward="false" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+=======
+        <state relative-caret-position="-1435">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+>>>>>>> templates
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/templates/movie_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="52" column="6" lean-forward="true" selection-start-line="52" selection-start-column="6" selection-end-line="52" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="25" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TWS_Cinema/TWS_Cinema/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/func.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="79" lean-forward="false" selection-start-line="8" selection-start-column="79" selection-end-line="8" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="266">
+            <caret line="14" column="27" lean-forward="false" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/static/favicon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/static/img/pageload-spinner.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/static/img/logo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/static/img/tws-logo-full.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/python3/3.6.4_1/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="380">
           <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
             <marker date="1517671426649" expanded="true" signature="85:847" ph="..." />
           </folding>
+=======
+        <state relative-caret-position="7039">
+          <caret line="442" column="8" lean-forward="false" selection-start-line="442" selection-start-column="8" selection-end-line="442" selection-end-column="8" />
+          <folding />
+>>>>>>> templates
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TWS_Cinema/TWS_Cinema/settings.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="364">
           <caret line="27" column="17" lean-forward="false" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
           <folding>
@@ -560,24 +759,69 @@
             <marker date="1517671426651" expanded="true" signature="3063:3165" ph="..." />
             <marker date="1517671426651" expanded="true" signature="3292:3392" ph="..." />
           </folding>
+=======
+        <state relative-caret-position="383">
+          <caret line="28" column="57" lean-forward="false" selection-start-line="28" selection-start-column="57" selection-end-line="28" selection-end-column="57" />
+          <folding />
+>>>>>>> templates
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/urls.py">
+    <entry file="file://$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="342">
           <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
+=======
+        <state relative-caret-position="195">
+          <caret line="38" column="104" lean-forward="true" selection-start-line="38" selection-start-column="104" selection-end-line="38" selection-end-column="104" />
+          <folding>
+            <element signature="e#9793#9800#0" expanded="true" />
+            <element signature="e#10336#10343#0" expanded="true" />
+          </folding>
+>>>>>>> templates
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/views.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="-755">
           <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+=======
+        <state relative-caret-position="43">
+          <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+>>>>>>> templates
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="e#17#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TWS_Cinema/Cinema_Pages/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

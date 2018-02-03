@@ -18,3 +18,6 @@ class Movie(models.Model):
     intro = models.TextField(null=True, blank=True)
 
 
+    # 添加以下代码，在网站后台访问会报错
+    # def __str__(self):
+    #     return self.intro[:20] + '...'
