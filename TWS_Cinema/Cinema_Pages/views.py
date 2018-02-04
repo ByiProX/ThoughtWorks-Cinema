@@ -10,11 +10,15 @@ from .func import fuzzy_finder
 
 
 def index(request):
+    return render(request, 'index.html')
+
+
+def movie_display(request):
     movies_list = Movie.objects.order_by('-year')  # 降序
     paginator = Paginator(movies_list, 16)
     page = request.GET.get('page')
     movies = paginator.get_page(page)
-    return render(request, 'index.html', {'movies': movies})
+    return render(request, 'movie_display.html', {'movies': movies})
 
 
 def movie_detail(request, id):
