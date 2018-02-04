@@ -19,7 +19,7 @@
 	<script src="{% static '../static/js/blocs.min.js' %}"></script>
 	<script src="{% static '../static/js/jquery.touchSwipe.min.js' %}" defer></script>
 	<script src="{% static '../static/js/lazysizes.min.js' %}" defer></script>
-    <title>Home</title>
+    <title>电影详情</title>
 
 
 <!-- Google Analytics -->
@@ -45,7 +45,7 @@
 			    <form action="{% url 'movie_search_form' %}" method="post" class="navbar-form pull-right" role="search">
                     {% csrf_token %}
                     <input type="text" name="q" class="form-control" placeholder="Search">
-                    <button type="submit" name="submit" class="btn btn-default">Submit</button>
+                    <button type="submit" name="submit" class="btn btn-default">搜索</button>
                 </form>
             </div>
 		</nav>

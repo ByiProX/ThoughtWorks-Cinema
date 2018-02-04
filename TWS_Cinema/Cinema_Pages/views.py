@@ -38,7 +38,7 @@ def movie_search_by_genre(request, genre):
     page = request.GET.get('page')
     movies = paginator.get_page(page)
     context = {'movies': movies}
-    return render(request, 'index.html', context)
+    return render(request, 'movie_display.html', context)
 
 
 def movie_search_by_year(request, year):
@@ -56,7 +56,7 @@ def movie_search_by_year(request, year):
     page = request.GET.get('page')
     movies = paginator.get_page(page)
     context = {'movies': movies}
-    return render(request, 'index.html', context)
+    return render(request, 'movie_display.html', context)
 
 
 # def movie_search_form(request):
@@ -74,10 +74,10 @@ def movie_search_form(request):
     q = request.POST.get('q')
     collection = Movie.objects.all()
     movies_list = fuzzy_finder(q, collection)
-    paginator = Paginator(movies_list, 8)
+    paginator = Paginator(movies_list, 16)
     page = request.GET.get('page')
     movies = paginator.get_page(page)
-    return render(request, 'index.html', {'movies': movies})
+    return render(request, 'movie_display.html', {'movies': movies})
 
 
 

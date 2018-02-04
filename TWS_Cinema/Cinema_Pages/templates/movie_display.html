@@ -19,7 +19,7 @@
 	<script src="{% static '../static/js/blocs.min.js' %}"></script>
 	<script src="{% static '../static/js/jquery.touchSwipe.min.js' %}" defer></script>
 	<script src="{% static '../static/js/lazysizes.min.js' %}" defer></script>
-    <title>Cinema</title>
+    <title>首页</title>
 
 
 <!-- Google Analytics -->
@@ -32,8 +32,8 @@
 <div class="page-container">
 
 <!-- bloc-0 -->
-<div class="bloc bloc-fill-screen bgc-black bg-tracks d-bloc " id="bloc-0">
-	<div class="container fill-bloc-top-edge sticky-nav">
+<div class="bloc bgc-black d-bloc " id="bloc-0">
+	<div class="container fill-bloc-top-edge">
 		<nav class="navbar row">
 			<div class="navbar-header">
 				<a class="navbar-brand" href="{% url 'index' %}"><img src="{% static '../static/img/logo.png' %}" alt="logo" class="lazyload" />ThoughtWorks</a>
@@ -45,32 +45,10 @@
 			    <form action="{% url 'movie_search_form' %}" method="post" class="navbar-form pull-right" role="search">
                     {% csrf_token %}
                     <input type="text" name="q" class="form-control" placeholder="Search">
-                    <button type="submit" name="submit" class="btn btn-default">Submit</button>
+                    <button type="submit" name="submit" class="btn btn-default">搜索</button>
                 </form>
             </div>
 		</nav>
-	</div>
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-12">
-				<h1 class="text-center mountain-hero-text fadeInUp animated">
-					Welcome to ThoughtWorks Cinema!
-				</h1>
-				<h3 class="text-center mg-lg mountain-hero-text-sub fadeInUp animDelay06, .animDelay04-hvr animated">
-					Just Suit Yourself Here.
-				</h3>
-				<div class="text-center">
-					<a onclick="scrollToTarget('#bloc-1')" class="btn fadeIn animDelay1 btn-wire btn-xl animated">Get Started</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="container fill-bloc-bottom-edge">
-		<div class="row">
-			<div class="col-sm-12">
-				<a id="scroll-hero" class="blocs-hero-btn-dwn" href="#"><span class="fa fa-chevron-down"></span></a>
-			</div>
-		</div>
 	</div>
 </div>
 <!-- bloc-0 END -->
