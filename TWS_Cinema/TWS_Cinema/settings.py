@@ -82,7 +82,7 @@ DATABASES = {
     'default': {
         # 'ENGINE': 'django.db.backends.sqlite3',
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'db.TWS_Cinema',
+        'NAME': 'TWS_Cinema',
         'USER': 'root',  #数据库登录用户名
         'PASSWORD': 'root',  #数据库登录密码
         'HOST': 'localhost',  #数据库所在主机
