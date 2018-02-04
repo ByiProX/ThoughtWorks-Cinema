@@ -15,7 +15,7 @@ def index(request):
 
 def movie_display(request):
     movies_list = Movie.objects.order_by('-year')  # 降序
-    paginator = Paginator(movies_list, 16)
+    paginator = Paginator(movies_list, 30)
     page = request.GET.get('page')
     movies = paginator.get_page(page)
     return render(request, 'movie_display.html', {'movies': movies})
@@ -23,7 +23,13 @@ def movie_display(request):
 
 def movie_detail(request, id):
     movie = Movie.objects.get(id=id)
-    context = {'movie': movie}
+    datas = Movie.objects.all()
+    recommend_list = []
+    for data in datas:
+        if movie.genres.split(',')[0] in data.genres:
+            recommend_list.append(data)
+    recommend_list.remove(movie)  # 去除重复项
+    context = {'movie': movie, 'recommend_list': recommend_list[:12]}
     return render(request, 'movie_detail.html', context)
 
 
@@ -34,7 +40,7 @@ def movie_search_by_genre(request, genre):
         if genre in data.genres:
             movies_list.append(data)
 
-    paginator = Paginator(movies_list, 16)
+    paginator = Paginator(movies_list, 18)
     page = request.GET.get('page')
     movies = paginator.get_page(page)
     context = {'movies': movies}
@@ -52,7 +58,7 @@ def movie_search_by_year(request, year):
             if str(year) == data.year[:2]:
                 movies_list.append(data)
 
-    paginator = Paginator(movies_list, 16)
+    paginator = Paginator(movies_list, 18)
     page = request.GET.get('page')
     movies = paginator.get_page(page)
     context = {'movies': movies}

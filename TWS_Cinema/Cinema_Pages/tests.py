@@ -18,6 +18,10 @@ class CinemaPagesTestCase(TestCase):
         response = self.client.get('/index')
         self.failUnlessEqual(response.status_code, 200)
 
+    def test_movie_display(self):
+        response = self.client.get('/movie_display/')
+        self.failUnlessEqual(response.status_code, 200)
+
     def test_search(self):
         response = self.client.post('/movie/search/', {'q': 'big'})
         self.failUnlessEqual(response.status_code, 200)

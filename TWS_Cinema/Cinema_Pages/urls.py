@@ -7,7 +7,7 @@ urlpatterns = [
     # Home page.
     re_path(r'^$|^index$', views.index, name='index'),
     re_path(r'^movie_display/', views.movie_display, name='movie_display'),
-    re_path(r'^movie/id/(?P<id>[0-9]{6,})/', views.movie_detail, name='movie_id'),
+    re_path(r'^movie/id/(?P<id>[0-9]{6,})/', views.movie_detail, name='movie_detail'),
     re_path(r'^movie/genre/(?P<genre>[\w]+)/', views.movie_search_by_genre, name='movie_genre'),
     re_path(r'^movie/year/(?P<year>[0-9]{2,4})/', views.movie_search_by_year, name='movie_year'),
     re_path(r'^movie/search/', views.movie_search_form, name='movie_search_form'),

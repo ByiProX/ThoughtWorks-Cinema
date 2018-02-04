@@ -142,18 +142,22 @@
 			<div class="col-sm-9">
                 <div class="row">
                     {% for movie in movies %}
-                    <div class="col-sm-3 text-center">
-                        <a href="{% url 'movie_id' movie.id %}" data-gallery-id="gallery-1">
+                    <div class="col-sm-2 col-xs-4 text-center">
+                        <a href="{% url 'movie_detail' movie.id %}" data-gallery-id="gallery-1">
                             <img src="{{movie.image}}" alt="照片无法显示" class="img-responsive lazyload movie-img" />
-                            <p class="text-center">{{movie.title}}</p>
+                            <p class="text-center">
+                                {%if movie.title|length >= 8 %}
+                                {{movie.title|slice:'6'}} ...
+                                {%else%}
+                                {{movie.title}}
+                                {%endif%}
+                            </p>
                         </a>
                         <p class="text-center movie-rating">
                             评分: {{movie.rating}}
                         </p>
     			    </div>
                     {% endfor %}
-
-
                 </div>
 
                 <!--pagination-->

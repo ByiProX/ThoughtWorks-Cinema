@@ -37,6 +37,27 @@ a:hover{text-decoration: none; cursor:pointer;}
 
 
 /* Sizes */
+.sidebar_cell{
+    padding-bottom: 50px;
+    padding-top: 5px;
+}
+
+.sidebar_cell_title{
+    font-size:20px;
+}
+
+.sidebar_cell_list{
+    font-size:16px;
+}
+
+.sidebar_cell{
+    margin-bottom:
+}
+
+.detail-page-title{
+    margin-left:20px;
+}
+
 .page-num-location{
     margin-top: -10px;
 }

@@ -59,13 +59,13 @@
         <h2>{{movie.title}} {{movie.original_title}} ({{movie.year}})</h2>
         <div class="row voffset">
             <!--left-->
-            <div class="col-sm-4">
+            <div class="col-sm-4 col-xs-6">
                 <img src="{{movie.image}}" class="movie_detail_page" />
 			</div>
             <!--end left-->
 
             <!--right-->
-			<div class="col-sm-8">
+			<div class="col-sm-8 col-xs-6">
                 <div id="info">
                     <span><span class="pl">导演: </span> <span class="attrs">{{movie.directors}}</span></span><br>
                     <span class="actor"><span class="pl">主演: </span> <span class="attrs">{{movie.casts}}</span></span><br>
@@ -82,29 +82,36 @@
 		</div>
 
         <div class="row">
-			<div class="col-sm-12">
-                <h3>剧情简介</h3>
+            <h3 class="detail-page-title">剧情简介</h3>
+            <div class="col-sm-12">
                 <p>Lorem ipsum dolor sit amet, adipiscing elit Aenean commodo ligula eget.</p>
 			</div>
 		</div>
         <div class="row">
-			<div class="col-sm-12">
-                <h3>影评</h3>
+            <h3 class="detail-page-title">影评</h3>
+            <div class="col-sm-12">
                 <p>Lorem ipsum dolor sit amet, adipiscing elit Aenean commodo ligula eget.</p>
 			</div>
 		</div>
         <div class="row">
-			<div class="col-sm-12">
-                <h3>电影推荐</h3>
-                <p>Lorem ipsum dolor sit amet, adipiscing elit Aenean commodo ligula eget.</p>
-                <p>Lorem ipsum dolor sit amet, adipiscing elit Aenean commodo ligula eget.</p>
-                <p>Lorem ipsum dolor sit amet, adipiscing elit Aenean commodo ligula eget.</p>
-                <p>Lorem ipsum dolor sit amet, adipiscing elit Aenean commodo ligula eget.</p>
-                <p>Lorem ipsum dolor sit amet, adipiscing elit Aenean commodo ligula eget.</p>
-                <p>Lorem ipsum dolor sit amet, adipiscing elit Aenean commodo ligula eget.</p>
-                <p>Lorem ipsum dolor sit amet, adipiscing elit Aenean commodo ligula eget.</p>
-                <p>Lorem ipsum dolor sit amet, adipiscing elit Aenean commodo ligula eget.</p>
-                <p>Lorem ipsum dolor sit amet, adipiscing elit Aenean commodo ligula eget.</p>
+            <h3 class="detail-page-title">电影推荐</h3>
+            {% for rec in recommend_list %}
+            <div class="col-sm-2 col-xs-4 text-center">
+                <a href="{% url 'movie_detail' rec.id %}" data-gallery-id="gallery-1">
+                    <img src="{{rec.image}}" alt="照片无法显示" class="img-responsive lazyload movie-img" />
+                    <p class="text-center">
+                        {%if rec.title|length >= 8 %}
+                        {{rec.title|slice:'6'}} ...
+                        {%else%}
+                        {{rec.title}}
+                        {%endif%}
+                    </p>
+                </a>
+                <p class="text-center movie-rating">
+                    评分: {{rec.rating}}
+                </p>
+            </div>
+            {% endfor %}
 			</div>
 		</div>
 	</div>
