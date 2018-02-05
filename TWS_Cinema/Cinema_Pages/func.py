@@ -24,5 +24,6 @@ class GetOtherInfo(object):
         self.region = ','.join(self.datas['countries'])
         self.languages = ','.join(self.datas['languages'])
         self.reviews = self.datas['popular_reviews'][:5]
+        self.image = self.datas['images']['small']
 
 
