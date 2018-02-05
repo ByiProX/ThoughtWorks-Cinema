@@ -71,9 +71,9 @@
                     <span class="actor"><span class="pl">主演: </span> <span class="attrs">{{movie.casts}}</span></span><br>
                     <span class="pl">类型: </span> <span property="v:genre">{{movie.genres}}</span><br>
 
-                    <span class="pl">制片国家/地区: </span>{{movie.region}}<br>
-                    <span class="pl">语言: </span> 英语<br>
-                    <span class="pl">上映日期: </span> <span property="v:initialReleaseDate" content="">{{movie.year}}</span><br>
+                    <span class="pl">制片国家/地区: </span>{{other_info.region}}<br>
+                    <span class="pl">语言: </span> {{other_info.languages}}<br>
+                    <span class="pl">上映日期: </span> <span property="v:initialReleaseDate" content="">{{movie.year}}年</span><br>
                     <span class="pl">评分: </span>{{movie.rating}}<br>
                 </div>
 
@@ -84,7 +84,9 @@
         <div class="row">
             <h3 class="detail-page-title">剧情简介</h3>
             <div class="col-sm-12">
-                <p>Lorem ipsum dolor sit amet, adipiscing elit Aenean commodo ligula eget.</p>
+                <p>
+                    {{other_info.intro}}<a href="https://movie.douban.com/subject/{{movie.id}}/">豆瓣</a>
+                </p>
 			</div>
 		</div>
         <div class="row">

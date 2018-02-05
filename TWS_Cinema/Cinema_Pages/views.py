@@ -5,6 +5,7 @@ from django.http import JsonResponse
 from django.http import Http404
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from .func import fuzzy_finder
+from .func import GetOtherInfo
 
 # Create your views here.
 
@@ -29,7 +30,8 @@ def movie_detail(request, id):
         if movie.genres.split(',')[0] in data.genres:
             recommend_list.append(data)
     recommend_list.remove(movie)  # 去除重复项
-    context = {'movie': movie, 'recommend_list': recommend_list[:12]}
+    other_info = GetOtherInfo(id)
+    context = {'movie': movie, 'recommend_list': recommend_list[:12], 'other_info': other_info}
     return render(request, 'movie_detail.html', context)
 
 
@@ -80,7 +82,7 @@ def movie_search_form(request):
     q = request.POST.get('q')
     collection = Movie.objects.all()
     movies_list = fuzzy_finder(q, collection)
-    paginator = Paginator(movies_list, 16)
+    paginator = Paginator(movies_list, 30)
     page = request.GET.get('page')
     movies = paginator.get_page(page)
     return render(request, 'movie_display.html', {'movies': movies})
