@@ -23,6 +23,6 @@ class GetOtherInfo(object):
         self.intro = self.datas['summary'][:-2]
         self.region = ','.join(self.datas['countries'])
         self.languages = ','.join(self.datas['languages'])
-        self.reviews = self.datas['popular_reviews']
+        self.reviews = self.datas['popular_reviews'][:5]
 
 

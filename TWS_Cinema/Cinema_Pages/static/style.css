@@ -2,6 +2,51 @@
 	    (null)
         Built with Blocs
 -----------------------------------------------------------------------------------*/
+/*-----------------------video background---------------------------------------------------*/
+/*.homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    position: relative;
+}
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+.video-container {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+}
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+.video-container .filter {
+    z-index: 100;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+}
+.video-container video.fillWidth {
+    width: 100%;
+}
+*/
+/*---------------------------------------------------------------------------------*/
+
 
 body{
 	margin:0;
@@ -37,9 +82,39 @@ a:hover{text-decoration: none; cursor:pointer;}
 
 
 /* Sizes */
-.review-item{
-    margin-bottom: 25px;
+.sidebar_cell_list a{
+    margin: 0 3px 3px 0;
+    padding: 0 3px;
+    display: inline-block;
+    letter-spacing: normal;
 }
+
+span.pl{
+    color:rgba(0,0,0,.7);
+}
+
+.movie-name{
+    color:#494949;
+}
+
+.movie-info{
+    margin-left:-100px;
+}
+
+.movie_detail_page{
+    margin-left:20px;
+}
+
+.review-summary{
+    margin-top:8px;
+    color:rgba(0,0,0,.7);
+}
+
+.reviews{
+    margin:12px 15px;
+    color:rgba(0,0,0,.7);
+}
+
 
 .sidebar_cell{
     padding-bottom: 50px;
@@ -409,7 +484,7 @@ img.mg-lg{
 -------------------------------------------------------------- */
 
 .btn{
-	margin: 0 5px 5px 0;
+	margin: 0;
 }
 .btn.pull-right{
 	margin: 0 0 5px 5px;
