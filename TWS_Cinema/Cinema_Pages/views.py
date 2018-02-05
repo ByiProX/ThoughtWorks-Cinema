@@ -15,56 +15,69 @@ def index(request):
 
 
 def movie_display(request):
-    movies_list = Movie.objects.order_by('-year')  # 降序
-    paginator = Paginator(movies_list, 30)
-    page = request.GET.get('page')
-    movies = paginator.get_page(page)
-    return render(request, 'movie_display.html', {'movies': movies})
+    try:
+        movies_list = Movie.objects.order_by('-year')  # 降序
+        paginator = Paginator(movies_list, 30)
+        page = request.GET.get('page')
+        movies = paginator.get_page(page)
+        return render(request, 'movie_display.html', {'movies': movies})
+    except:
+        return render(request, '404.html')
 
 
 def movie_detail(request, id):
-    movie = Movie.objects.get(id=id)
-    datas = Movie.objects.all()
-    recommend_list = []
-    for data in datas:
-        if movie.genres.split(',')[0] in data.genres:
-            recommend_list.append(data)
-    recommend_list.remove(movie)  # 去除重复项
-    other_info = GetOtherInfo(id)
-    context = {'movie': movie, 'recommend_list': recommend_list[:12], 'other_info': other_info}
-    return render(request, 'movie_detail.html', context)
+    try:
+        movie = Movie.objects.get(id=id)
+        datas = Movie.objects.all()
+        recommend_list = []
+        for data in datas:
+            if movie.genres.split(',')[0] in data.genres:
+                recommend_list.append(data)
+        recommend_list.remove(movie)  # 去除重复项
+        other_info = GetOtherInfo(id)
+        context = {'movie': movie, 'recommend_list': recommend_list[:12], 'other_info': other_info}
+        return render(request, 'movie_detail.html', context)
+    except (KeyError, ValueError):
+        return render(request, '404.html')
+        # pass
 
 
 def movie_search_by_genre(request, genre):
-    datas = Movie.objects.all()
-    movies_list = []
-    for data in datas:
-        if genre in data.genres:
-            movies_list.append(data)
+    try:
+        datas = Movie.objects.all()
+        movies_list = []
+        for data in datas:
+            if genre in data.genres:
+                movies_list.append(data)
 
-    paginator = Paginator(movies_list, 18)
-    page = request.GET.get('page')
-    movies = paginator.get_page(page)
-    context = {'movies': movies}
-    return render(request, 'movie_display.html', context)
+        paginator = Paginator(movies_list, 18)
+        page = request.GET.get('page')
+        movies = paginator.get_page(page)
+        context = {'movies': movies}
+        return render(request, 'movie_display.html', context)
+    except:
+        return render(request, '404.html')
 
 
 def movie_search_by_year(request, year):
     # 使用Movie.objects.filter(year = year)更佳
-    datas = Movie.objects.all()
-    movies_list = []
-    for data in datas:
-        if str(year) == data.year:
-            movies_list.append(data)
-        else:
-            if str(year) == data.year[:2]:
+    try:
+        datas = Movie.objects.all()
+        movies_list = []
+        for data in datas:
+            if str(year) == data.year:
                 movies_list.append(data)
+            else:
+                if str(year) == data.year[:2]:
+                    movies_list.append(data)
 
-    paginator = Paginator(movies_list, 18)
-    page = request.GET.get('page')
-    movies = paginator.get_page(page)
-    context = {'movies': movies}
-    return render(request, 'movie_display.html', context)
+        paginator = Paginator(movies_list, 18)
+        page = request.GET.get('page')
+        movies = paginator.get_page(page)
+        context = {'movies': movies}
+        return render(request, 'movie_display.html', context)
+    except:
+        return render(request, '404.html')
 
 
 # def movie_search_form(request):
@@ -79,13 +92,16 @@ def movie_search_by_year(request, year):
 
 def movie_search_form(request):
     # 模糊查询
-    q = request.POST.get('q')
-    collection = Movie.objects.all()
-    movies_list = fuzzy_finder(q, collection)
-    paginator = Paginator(movies_list, 30)
-    page = request.GET.get('page')
-    movies = paginator.get_page(page)
-    return render(request, 'movie_display.html', {'movies': movies})
+    try:
+        q = request.POST.get('q')
+        collection = Movie.objects.all()
+        movies_list = fuzzy_finder(q, collection)
+        paginator = Paginator(movies_list, 30)
+        page = request.GET.get('page')
+        movies = paginator.get_page(page)
+        return render(request, 'movie_display.html', {'movies': movies})
+    except:
+        return render(request, '404.html')
 
 
 

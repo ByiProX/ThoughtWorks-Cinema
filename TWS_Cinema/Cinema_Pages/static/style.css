@@ -37,6 +37,10 @@ a:hover{text-decoration: none; cursor:pointer;}
 
 
 /* Sizes */
+.review-item{
+    margin-bottom: 25px;
+}
+
 .sidebar_cell{
     padding-bottom: 50px;
     padding-top: 5px;
