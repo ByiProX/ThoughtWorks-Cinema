@@ -50,7 +50,7 @@ def movie_search_by_genre(request, genre):
             if genre in data.genres:
                 movies_list.append(data)
 
-        paginator = Paginator(movies_list, 18)
+        paginator = Paginator(movies_list, 12)
         page = request.GET.get('page')
         movies = paginator.get_page(page)
         context = {'movies': movies}
@@ -71,7 +71,7 @@ def movie_search_by_year(request, year):
                 if str(year) == data.year[:2]:
                     movies_list.append(data)
 
-        paginator = Paginator(movies_list, 18)
+        paginator = Paginator(movies_list, 12)
         page = request.GET.get('page')
         movies = paginator.get_page(page)
         context = {'movies': movies}

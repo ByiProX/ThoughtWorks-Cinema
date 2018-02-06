@@ -139,6 +139,7 @@
             <!--end left-->
 
             <!--right-->
+            <!--{{movies|length}}-->
 			<div class="col-sm-9">
                 <div class="row">
                     {% if movies %}
@@ -160,35 +161,42 @@
     			    </div>
                     {% endfor %}
                     {% else %}
-                    <video class="bloc-video" preload="auto" loop="loop" autoplay="autoplay" width="100%">gfhf
-                        <source src="{% static '../static/vid/404.mp4' %}" type="video/mp4" />
-                    </video>
-                    <h3 class="text-center" style="color:#333">没有资源</h3>
+                    <div class="video-container">
+                            <video class="bloc-video" preload="auto" loop="loop" autoplay="autoplay" width="100%">gfhf
+                                <source src="{% static '../static/vid/404.mp4' %}" type="video/mp4" />
+                            </video>
+                            <h3 class="text-center" style="color:#333">没有资源</h3>
+                    </div>
                     {% endif %}
                 </div>
 
                 <!--pagination-->
+                <!--{{movies|length}}-->
+                {% if movies|length < 12 %}
+                <div class="row"></div>
+                {% else %}
                 <div class="row">
                     <div class="col-sm-12 text-center page-num-location">
                         <div class="pagination">
                             <span class="step-links">
                             {% if movies.has_previous %}
-                            <a href="?page=1">&laquo; 首页</a>
-                            <a href="?page={{ movies.previous_page_number }}">前一页</a>
+                            <a href="?page=1" ><span class="label label-primary">&laquo; 首页</span></a>
+                            <a href="?page={{ movies.previous_page_number }}" ><span class="label label-success">前一页</span></a>
                             {% endif %}
 
                             <span class="current">
-                            Page {{ movies.number }} of {{ movies.paginator.num_pages }}.
+                            Page {{ movies.number }} of {{ movies.paginator.num_pages }}
                             </span>
 
                             {% if movies.has_next %}
-                                <a href="?page={{ movies.next_page_number }}">下一页</a>
-                                <a href="?page={{ movies.paginator.num_pages }}">页尾 &raquo;</a>
+                                <a href="?page={{ movies.next_page_number }}"><span class="label label-success">下一页</span></a>
+                                <a href="?page={{ movies.paginator.num_pages }}"><span class="label label-primary">页尾 &raquo;</span></a>
                             {% endif %}
                             </span>
                         </div>
                     </div>
                 </div>
+                {% endif %}
                 <!--end pagination-->
 
 
