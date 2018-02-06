@@ -1,8 +1,10 @@
 # 思沃影院 #
 
+本项目已经部署到服务器，可以通过该IP查看
+http://59.110.221.56/
 
 ### 技术栈 ###
-> Bootstrap 3 + Django 2.0.1 + MySQL 5.7.17
+> Bootstrap 3 + Django 2.0.1 + MySQL 5.7.17 + nginx
 
 
 ---
