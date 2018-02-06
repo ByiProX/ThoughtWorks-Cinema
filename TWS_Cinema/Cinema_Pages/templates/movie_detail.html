@@ -60,7 +60,7 @@
         <div class="row voffset">
             <!--left-->
             <div class="col-sm-3 col-xs-6">
-                <img src="{{movie.image}}" alt="图片找不到了" class="movie_detail_page" width="130px" />
+                <img src="{{movie.image}}" alt="图片找不到了" class="movie_detail_page" height="190px" />
                 <!--<img src="{{other_info.image}}" class="movie_detail_page" width="140px" />-->
 			</div>
             <!--end left-->
@@ -80,8 +80,8 @@
                 </div>
 
                 <div class="btn-group">
-                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        在线观看
+                    <button type="button" class="btn btn-primary dropdown-toggle watch-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        在线观看，选取路线
                         <span class="caret"></span>
                         <span class="sr-only">Toggle Dropdown</span>
                     </button>
@@ -99,6 +99,8 @@
                                 </span>
                             </a>
                         </li>
+                        {%empty%}
+                        <li class="text-center"><span>Ooooops,暂无资源</span></li>
                         {% endfor %}
                         <li role="separator" class="divider"></li>
                         <li><a href="https://movie.douban.com/subject/{{movie.id}}/" target="_blank">豆瓣网中搜索</a></li>
@@ -129,6 +131,8 @@
                                 {%endif%}
                             </span></span>
                         </li>
+                        {%empty%}
+                        <p><span>Ooooops，暂无观影资源!!!</span></p>
                         {% endfor %}
                     </ul>
                 </div>

@@ -141,6 +141,7 @@
             <!--right-->
 			<div class="col-sm-9">
                 <div class="row">
+                    {% if movies %}
                     {% for movie in movies %}
                     <div class="col-sm-2 col-xs-4 text-center">
                         <a href="{% url 'movie_detail' movie.id %}" data-gallery-id="gallery-1">
@@ -158,6 +159,12 @@
                         </p>
     			    </div>
                     {% endfor %}
+                    {% else %}
+                    <video class="bloc-video" preload="auto" loop="loop" autoplay="autoplay" width="100%">gfhf
+                        <source src="{% static '../static/vid/404.mp4' %}" type="video/mp4" />
+                    </video>
+                    <h3 class="text-center" style="color:#333">没有资源</h3>
+                    {% endif %}
                 </div>
 
                 <!--pagination-->

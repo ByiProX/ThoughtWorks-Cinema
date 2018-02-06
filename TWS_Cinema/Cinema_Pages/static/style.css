@@ -91,6 +91,10 @@ span.buylink-price{
 
 
 /* Sizes */
+.watch-btn{
+    padding:3px 10px;
+}
+
 span .watch-button{
     display: block;
     margin: 0 auto;
@@ -718,7 +722,7 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 /* Bloc image backgrounds */
 
 .bg-tracks{
-	background-image:url("img/tracks.jpg");
+	background-image:url("img/film.jpg");
 }
 
 
