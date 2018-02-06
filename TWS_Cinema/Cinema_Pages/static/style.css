@@ -63,6 +63,11 @@ a:hover{text-decoration: none; cursor:pointer;}
 
 /* = Blocs
 -------------------------------------------------------------- */
+span.buylink-price{
+    left: 160px;
+    position: absolute;
+    color: #999;
+}
 
 .bloc{
 	width:100%;
@@ -82,6 +87,11 @@ a:hover{text-decoration: none; cursor:pointer;}
 
 
 /* Sizes */
+.movie-link{
+    background: #f9f9f9;
+    padding: 10px;
+}
+
 .sidebar_cell_list a{
     margin: 0 3px 3px 0;
     padding: 0 3px;
@@ -98,7 +108,7 @@ span.pl{
 }
 
 .movie-info{
-    margin-left:-100px;
+    margin-left:0px;
 }
 
 .movie_detail_page{

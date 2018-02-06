@@ -25,5 +25,5 @@ class GetOtherInfo(object):
         self.languages = ','.join(self.datas['languages'])
         self.reviews = self.datas['popular_reviews'][:5]
         self.image = self.datas['images']['small']
-
+        self.videos = self.datas['videos']
 
