@@ -87,6 +87,18 @@ span.buylink-price{
 
 
 /* Sizes */
+span .watch-button{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 90px;
+    height: 24px;
+    line-height: 24px;
+    background-color: #268dcd;
+    color: #fff;
+    border-radius: 2px;
+}
+
 .footer{
     color: #eee;
     font-size: 12px;
