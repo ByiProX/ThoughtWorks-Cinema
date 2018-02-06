@@ -78,7 +78,7 @@
                     <span class="pl">上映日期: </span> <span property="v:initialReleaseDate" content="">{{movie.year}}年</span><br>
                     <span class="pl">豆瓣评分: </span>{{movie.rating}}<br>
                 </div>
-                <!-- Split button -->
+
                 <div class="btn-group">
                     <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         在线观看
@@ -125,7 +125,7 @@
                                 {% if i.need_pay %}
                                 VIP 收费
                                 {%else%}
-                                免费
+                                <span style="color:#127ccc">免费!</span>
                                 {%endif%}
                             </span></span>
                         </li>
