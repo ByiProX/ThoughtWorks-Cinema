@@ -85,7 +85,7 @@
                         <span class="caret"></span>
                         <span class="sr-only">Toggle Dropdown</span>
                     </button>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu list-group">
                         {% for i in other_info.videos %}
                         <li>
                             <a href="{{i.sample_link}}" target="_blank">
@@ -94,7 +94,7 @@
                                     {% if i.need_pay %}
                                     收费
                                     {%else%}
-                                    <span style="color:#4da8ec">免费!</span>
+                                    <span class="" style="color:#4da8ec">免费!</span>
                                     {%endif%}
                                 </span>
                             </a>
@@ -103,7 +103,7 @@
                         <li class="text-center"><span>Ooooops,暂无资源</span></li>
                         {% endfor %}
                         <li role="separator" class="divider"></li>
-                        <li><a href="https://movie.douban.com/subject/{{movie.id}}/" target="_blank">豆瓣网中搜索</a></li>
+                        <li class="list-group-item-success"><a href="https://movie.douban.com/subject/{{movie.id}}/" target="_blank">豆瓣网中搜索</a></li>
                     </ul>
                 </div>
 			</div>
@@ -127,7 +127,7 @@
                                 {% if i.need_pay %}
                                 VIP 收费
                                 {%else%}
-                                <span style="color:#127ccc">免费!</span>
+                                <span class="" style="color:#127ccc">免费!</span>
                                 {%endif%}
                             </span></span>
                         </li>
@@ -142,7 +142,7 @@
 		</div>
 
         <div class="row">
-            <h3 class="detail-page-title">剧情简介</h3>
+            <h3 class="detail-page-title"><span class="label label-default">剧情简介</span></h3>
             <div class="col-sm-12 col-xs-12 reviews">
                 <p>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -150,13 +150,22 @@
                 </p>
 			</div>
 		</div>
+
+        <!--豆瓣影评 Top5-->
         <div class="row">
-            <h3 class="detail-page-title">豆瓣影评 Top5</h3>
+            <h3 class="detail-page-title"><span class="label label-default">豆瓣影评 Top5</span></h3>
             {% for i in other_info.reviews %}
             <div class="col-sm-8 reviews">
                 <div class="review-item">
                     <header class="main-hd">
-                        <img width="28" height="28" src="{{i.author.avatar}}">|—<span><a href="{{i.alt}}/">{{i.title}}</a></span>
+                        <img width="28" height="28" src="{{i.author.avatar}}">
+                        <span>&nbsp;&nbsp;
+                            <a href="{{i.alt}}/">
+                                <span class="label label-primary">
+                                    {{i.title}}
+                                </span>
+                            </a>
+                        </span>
 
                     </header>
                     <div class="review-summary">
@@ -166,22 +175,26 @@
             </div>
             {% endfor %}
         </div>
+        <!--豆瓣影评 Top5 END-->
+
         <div class="row">
-            <h3 class="detail-page-title">相似电影推荐</h3>
+            <h3 class="detail-page-title"><span class="label label-default">相似电影推荐</span></h3>
             {% for rec in recommend_list %}
             <div class="col-sm-2 col-xs-4 text-center">
                 <a href="{% url 'movie_detail' rec.id %}" data-gallery-id="gallery-1">
                     <img src="{{rec.image}}" alt="照片无法显示" class="img-responsive lazyload movie-img" />
                     <p class="text-center">
-                        {%if rec.title|length >= 8 %}
-                        {{rec.title|slice:'6'}} ...
-                        {%else%}
-                        {{rec.title}}
-                        {%endif%}
+                        <span style="color:#444">
+                            {%if rec.title|length >= 8 %}
+                            {{rec.title|slice:'6'}} ...
+                            {%else%}
+                            {{rec.title}}
+                            {%endif%}
+                        </span>
                     </p>
                 </a>
                 <p class="text-center movie-rating">
-                    评分: {{rec.rating}}
+                    <span class="label label-primary">评分: {{rec.rating}}</span>
                 </p>
             </div>
             {% endfor %}
@@ -204,7 +217,7 @@
 					<span>CopyRight © Tws-Beijing 2018, All Rights Reserved.</span>
                     <span>
                         <a target="_blank" href="http://tws-beijing.ga/">
-                        &nbsp;&nbsp;&nbsp;&nbsp;关于我们
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;关于我们
                         </a>
                     </span>
 				</p>
