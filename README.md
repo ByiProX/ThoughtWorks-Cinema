@@ -1,5 +1,6 @@
 # 思沃影院 #
----
+
+
 ### 技术栈 ###
 > Bootstrap 3 + Django 2.0.1 + MySQL 5.7.17
 
@@ -9,7 +10,10 @@
 终端在venv文件夹路径下开启虚拟环境：
 
 ```python
-source ../venv/bin/activate.fish
+source ../venv/bin/activate.fish   # fish shell 若启动不了尝试以下两种方法
+---------------------------------------------------------------------
+source ../venv/bin/activate
+source ../venv/bin/activate.csh
 ```
 
 然后在manage.py路径下执行：
@@ -22,14 +26,14 @@ python3 manage.py runserver
 ## 网站功能描述
 
 
-#### #1.
+#### # 1.
 - 实现导航栏搜索电影，支持按年份搜索和类型搜索
     - 显示分类列表
     - 点击分类显示符合分类要求的电影
 
 - 实现搜索功能，支持按电影名称模糊搜索
 
-#### #2
+#### # 2.
 - 实现电影详细信息查看功能
     - 显示电影详细信息
     - 显示豆瓣 Top 5 影评
