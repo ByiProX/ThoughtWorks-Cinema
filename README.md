@@ -9,11 +9,10 @@ http://59.110.221.56/
 
 ---
 ### 本地服务运行方法 ###
-终端在venv文件夹路径下开启虚拟环境：
+终端在venv文件夹路径下开启虚拟环境(根据自己的shell进行选择)：
 
 ```python
-source ../venv/bin/activate.fish   # fish shell 若启动不了尝试以下两种方法
----------------------------------------------------------------------
+source ../venv/bin/activate.fish
 source ../venv/bin/activate
 source ../venv/bin/activate.csh
 ```
