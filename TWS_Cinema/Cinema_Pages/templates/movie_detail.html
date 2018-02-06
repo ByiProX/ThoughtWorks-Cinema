@@ -36,7 +36,7 @@
 	<div class="container fill-bloc-top-edge">
 		<nav class="navbar row">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="{% url 'index' %}"><img src="{% static '../static/img/logo.png' %}" alt="logo" class="lazyload" />ThoughtWorks</a>
+				<a class="navbar-brand" href="{% url 'index' %}"><img src="{% static '../static/img/logo.png' %}" alt="logo" class="lazyload" />Thought<span style="bold">Works</span></a>
 				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle menu-icon-rounded-bars" data-toggle="collapse" data-target=".navbar-1">
 					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 				</button>
@@ -74,8 +74,9 @@
 
                     <span class="pl">制片国家/地区: </span>{{other_info.region}}<br>
                     <span class="pl">语言: </span> {{other_info.languages}}<br>
+                    <span class="pl">片长: </span> {{other_info.durations}}<br>
                     <span class="pl">上映日期: </span> <span property="v:initialReleaseDate" content="">{{movie.year}}年</span><br>
-                    <span class="pl">评分: </span>{{movie.rating}}<br>
+                    <span class="pl">豆瓣评分: </span>{{movie.rating}}<br>
                 </div>
 			</div>
             <!--end middle-->
@@ -165,18 +166,24 @@
 
 
 <!-- Footer - bloc-2 -->
-<!--<div class="bloc bgc-splashed-white build-with-blocs-bloc none bg-tracks d-bloc" id="bloc-2">-->
-	<!--<div class="container bloc-sm">-->
-		<!--<div class="row">-->
-			<!--<div class="col-sm-12 text-center">-->
-				<!--<a href="https://www.thoughtworks.com/cn/" target="_blank"><img src="{% static '../static/img/lazyload-ph.png' %}" data-src="{% static '../static/img/blocs-logo-wo.svg' %}" class="img-responsive center-block mg-sm lazyload" height="38" width="38" /></a>-->
-				<!--<p class="text-center">-->
-					<!--ThoughtWorks-->
-				<!--</p>-->
-			<!--</div>-->
-		<!--</div>-->
-	<!--</div>-->
-<!--</div>-->
+<div class="" id="bloc-2" style="background-color: #000;margin-top: 50px;">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 text-center footer">
+				<p>
+					<span>CopyRight © Tws-Beijing 2018, All Rights Reserved.</span>
+                    <span>
+                        <a target="_blank" href="http://tws-beijing.ga/">
+                        &nbsp;&nbsp;&nbsp;&nbsp;关于我们
+                        </a>
+                    </span>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
 <!-- Footer - bloc-2 END -->
 
 </div>

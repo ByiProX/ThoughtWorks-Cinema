@@ -21,9 +21,10 @@ class GetOtherInfo(object):
         self.response = requests.get(self.url)
         self.datas = self.response.json()
         self.intro = self.datas['summary'][:-2]
-        self.region = ','.join(self.datas['countries'])
-        self.languages = ','.join(self.datas['languages'])
+        self.region = '/'.join(self.datas['countries'])
+        self.languages = '/'.join(self.datas['languages'])
         self.reviews = self.datas['popular_reviews'][:5]
         self.image = self.datas['images']['small']
         self.videos = self.datas['videos']
+        self.durations = '/'.join(self.datas['durations'])
 

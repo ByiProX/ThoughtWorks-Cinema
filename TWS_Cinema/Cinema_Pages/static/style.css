@@ -64,7 +64,7 @@ a:hover{text-decoration: none; cursor:pointer;}
 /* = Blocs
 -------------------------------------------------------------- */
 span.buylink-price{
-    left: 160px;
+    left: 180px;
     position: absolute;
     color: #999;
 }
@@ -87,6 +87,13 @@ span.buylink-price{
 
 
 /* Sizes */
+.footer{
+    color: #eee;
+    font-size: 12px;
+    margin-top: 7px;
+    /*padding: 7px 0;*/
+}
+
 .movie-link{
     background: #f9f9f9;
     padding: 10px;
