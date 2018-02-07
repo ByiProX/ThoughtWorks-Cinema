@@ -164,7 +164,7 @@
                             {% endif %}
 
                             <span class="current" style="color:#080808;font-size:12px;">
-                            Page {{ movies.number }} of {{ movies.paginator.num_pages }}
+                            第 {{ movies.number }} 页，共 {{ movies.paginator.num_pages }} 页
                             </span>
 
                             {% if movies.has_next %}
