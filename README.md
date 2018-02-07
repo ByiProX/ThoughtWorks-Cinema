@@ -24,6 +24,13 @@ python3 manage.py runserver
 
 ---
 
+### 单元测试运行方法 ###
+在manage.py路径下终端运行
+
+```python
+python3 manage.py test
+```
+
 ## 网站功能描述
 
 
