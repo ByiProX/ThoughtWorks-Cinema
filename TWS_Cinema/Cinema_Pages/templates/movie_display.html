@@ -83,7 +83,6 @@
                             <a href="{% url 'movie_genre' '家庭' %}">家庭</a>
                             <a href="{% url 'movie_genre' '儿童' %}">儿童</a>
                             <a href="{% url 'movie_genre' '音乐' %}">音乐</a>
-                            <a href="{% url 'movie_genre' '情色' %}">情色</a>
                             <a href="{% url 'movie_genre' '同性' %}">同性</a>
                             <a href="{% url 'movie_genre' '歌舞' %}">歌舞</a>
                             <a href="{% url 'movie_genre' '西部' %}">西部</a>
@@ -155,9 +154,6 @@
 
                 <!--pagination-->
                 <!--{{movies|length}}-->
-                {% if movies|length < 12 %}
-                <div class="row"></div>
-                {% else %}
                 <div class="row">
                     <div class="col-sm-12 text-center page-num-location">
                         <div class="pagination">
@@ -167,7 +163,7 @@
                             <a href="?page={{ movies.previous_page_number }}" ><span class="label label-success">前一页</span></a>
                             {% endif %}
 
-                            <span class="current">
+                            <span class="current" style="color:#080808;font-size:12px;">
                             Page {{ movies.number }} of {{ movies.paginator.num_pages }}
                             </span>
 
@@ -179,7 +175,6 @@
                         </div>
                     </div>
                 </div>
-                {% endif %}
                 <!--end pagination-->
 
 
