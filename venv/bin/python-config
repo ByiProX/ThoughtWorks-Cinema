@@ -1,4 +1,4 @@
-#!/Users/Dhyana/iGithub/ThoughtWorksCinema/venv/bin/python
+#!/Users/Dhyana/iSourceTree/ThoughtWorks-Cinema/venv/bin/python
 
 import sys
 import getopt

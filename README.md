@@ -9,12 +9,19 @@ http://59.110.221.56/
 
 ---
 ### 本地服务运行方法 ###
+
+
+
 终端在venv文件夹路径下开启虚拟环境(根据自己的shell进行选择)：
 
 ```python
 source ../venv/bin/activate.fish
 source ../venv/bin/activate
 source ../venv/bin/activate.csh
+```
+终端进入requirements.txt所在目录，运行命令：
+```python3
+pip3 install -r requirements.txt
 ```
 
 然后在manage.py路径下执行：

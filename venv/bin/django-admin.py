@@ -1,4 +1,4 @@
-#!/Users/Dhyana/iGithub/ThoughtWorksCinema/venv/bin/python3.6
+#!/Users/Dhyana/iSourceTree/ThoughtWorks-Cinema/venv/bin/python3.6
 from django.core import management
 
 if __name__ == "__main__":
