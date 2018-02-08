@@ -24,9 +24,9 @@ source ../venv/bin/activate.csh
 pip3 install -r requirements.txt
 ```
 
-然后在manage.py路径下执行：
+然后执行：
 ```python
-python3 manage.py runserver
+python3 TWS_Cinema/manage.py runserver
 ```
 
 ---
