@@ -90,12 +90,12 @@ locust --host=http://59.110.221.56
 
 ![Screen Shot 2018-02-08 at 16.13.49.png](http://upload-images.jianshu.io/upload_images/2952111-f5e4ace67f22ddac.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
+### Reference ###
 
 
 
 
-
-
+[Locust 简介以及使用](https://my.oschina.net/u/1447352/blog/1499428/)
 
 
 
