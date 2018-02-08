@@ -80,7 +80,7 @@ python3 manage.py test
     * 1000人：40%出错率
 * 测试截图
 
-```python
+```python3
 locust --host=http://59.110.221.56
 ```
 
