@@ -19,7 +19,12 @@ source ../venv/bin/activate.fish
 source ../venv/bin/activate
 source ../venv/bin/activate.csh
 ```
-终端进入requirements.txt所在目录，运行命令：
+然后执行：
+```python
+python3 TWS_Cinema/manage.py runserver
+```
+
+**如果报错**，终端进入requirements.txt所在目录，运行命令：
 ```python3
 pip3 install -r requirements.txt
 ```
