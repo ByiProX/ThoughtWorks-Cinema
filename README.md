@@ -4,7 +4,7 @@
 http://59.110.221.56/
 
 ### 技术栈 ###
-> Bootstrap 3 + Django 2.0.1 + MySQL 5.7.17 + nginx
+> Bootstrap 3 + Django 2.0.1 + MySQL 5.7.17 + Nginx + locust
 
 
 ---
@@ -66,7 +66,18 @@ python3 manage.py test
     - 例如：api/movie/year/2003
 
 
+## 网站性能测试结果
+在文件locustfile.py路径下运行
 
+```python
+locust --host=http://59.110.221.56
+```
+
+![Screen Shot 2018-02-08 at 16.15.49.png](http://upload-images.jianshu.io/upload_images/2952111-4c41c64c40130ebe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![Screen Shot 2018-02-08 at 16.14.10.png](http://upload-images.jianshu.io/upload_images/2952111-c2c542dbf0ce9e58.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![Screen Shot 2018-02-08 at 16.13.49.png](http://upload-images.jianshu.io/upload_images/2952111-f5e4ace67f22ddac.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
 
