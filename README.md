@@ -79,7 +79,11 @@ python3 manage.py test
 
 
 ## 网站性能测试结果
+
 在文件locustfile.py路径下运行
+```python3
+locust --host=http://59.110.221.56
+```
 
 #### 压力测试 ####
 * 采取的框架：**locust**
@@ -92,9 +96,7 @@ python3 manage.py test
     * 1000人：40%出错率
 * 测试截图
 
-```python3
-locust --host=http://59.110.221.56
-```
+
 
 ![Screen Shot 2018-02-08 at 16.15.49.png](http://upload-images.jianshu.io/upload_images/2952111-4c41c64c40130ebe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
